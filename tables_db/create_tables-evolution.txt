@@ -1,0 +1,74 @@
+
+
+-- CEM_MALE_VICTIM_WEEKS
+
+CREATE TABLE IF NOT EXISTS CEM_MALE_VICTIM_WEEKS (
+	case_id numeric PRIMARY KEY,
+	state_peru numeric NOT NULL,
+	province_peru numeric NOT NULL,
+	district_peru numeric NOT NULL,
+	week numeric,
+	physical_v_count numeric,
+	sexual_v_count numeric,
+	economical_v_count numeric,
+	psychological_v_count numeric,
+	first_time_count numeric,
+	inf_count numeric,
+	nin_count numeric,
+	ado_count numeric,
+	ado_t_count numeric,
+	jov_count numeric,
+	adu_count numeric,
+	m60_count numeric,
+	family_count numeric,
+	love_count numeric,
+	no_rel_count numeric,
+	aggr_alcohol_count numeric,
+	aggr_drug_count numeric,
+	vict_disab_count numeric,
+	vict_alco_count numeric,
+	vict_drug_count numeric,
+	vict_lgtbi_count numeric
+);
+
+
+-- CEM_FEMALE_VICTIM_WEEKS
+
+CREATE TABLE IF NOT EXISTS CEM_FEMALE_VICTIM_WEEKS (
+	case_id numeric PRIMARY KEY,
+	state_peru numeric NOT NULL,
+	province_peru numeric NOT NULL,
+	district_peru numeric NOT NULL,
+	week numeric,
+	physical_v_count numeric,
+	sexual_v_count numeric,
+	economical_v_count numeric,
+	psychological_v_count numeric,
+	first_time_count numeric,
+	inf_count numeric,
+	nin_count numeric,
+	ado_count numeric,
+	ado_t_count numeric,
+	jov_count numeric,
+	adu_count numeric,
+	m60_count numeric,
+	family_count numeric,
+	love_count numeric,
+	no_rel_count numeric,
+	aggr_alcohol_count numeric,
+	aggr_drug_count numeric,
+	vict_disab_count numeric,
+	vict_alco_count numeric,
+	vict_drug_count numeric,
+	vict_lgtbi_count numeric
+);
+
+
+
+
+-- WEEKS
+CREATE TABLE IF NOT EXISTS WEEK_DATE (
+   week_id numeric PRIMARY KEY,
+   date_start date NOT NULL,
+   date_end date NOT NULL
+);
