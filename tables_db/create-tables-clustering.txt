@@ -1,0 +1,37 @@
+CREATE TABLE public.clustering_data
+(
+    id numeric NOT NULL,
+    case_date date,
+    cem text,
+    state numeric,
+    province numeric,
+    district numeric,
+    informant boolean,
+    enter_type numeric,
+    victim_sex numeric,
+    daughters_number numeric,
+    sons_number numeric,
+    victim_ethnicity numeric,
+    residence_area numeric,
+    victim_civil_state numeric,
+    education_level_victim numeric,
+    victim_works boolean,
+    victim_aggr_link numeric,
+    aggr_lives_w_victim numeric,
+    aggr_sex numeric,
+    report_registered boolean,
+    violence_type numeric,
+    aggr_consume_alcoh boolean,
+    victim_age numeric,
+    physical_aggr boolean,
+    psychological_aggr boolean,
+    economical_aggr boolean,
+    sexual_aggr boolean,
+    PRIMARY KEY (id)
+)
+WITH (
+    OIDS = FALSE
+);
+
+ALTER TABLE public.clustering_data
+    OWNER to postgres;
